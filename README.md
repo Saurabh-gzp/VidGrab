@@ -10,7 +10,7 @@ VidGrab is a free, fast, ad-free Android app that turns any link into a download
 videos or audio, at the best available quality (up to 8K) from 10+ platforms.
 
 ![Platform](https://img.shields.io/badge/Platform-Android-3ddc84?logo=android&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.2.2-a855f7)
+![Version](https://img.shields.io/badge/Version-2.2.3-a855f7)
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-29%20(Android%2010)-6d5efc)
 ![Build](https://img.shields.io/badge/Stack-Kotlin%20%2B%20Compose-ec4899)
 ![License](https://img.shields.io/badge/License-MIT-34d399)
@@ -39,19 +39,30 @@ Everything is hosted on [GitHub Releases](https://github.com/Saurabh-gzp/VidGrab
 
 | File | Link | Size | MD5 |
 | --- | --- | --- | --- |
-| **VidGrab APK** (`VidGrab-v2.2.2-universal.apk`) | [Download](https://github.com/Saurabh-gzp/VidGrab/releases/latest/download/VidGrab-v2.2.2-universal.apk) | 151 MB | `5c5e55190f33a18b56b546f149597bc4` |
-| **Source ZIP** (`VidGrab-v2.2.2-source.zip`) | [Download](https://github.com/Saurabh-gzp/VidGrab/releases/latest/download/VidGrab-v2.2.2-source.zip) | 3 MB | `b93c2656b9321a3720044d4b912c7246` |
+| **VidGrab APK** (`VidGrab-v2.2.3-universal.apk`) | [Download](https://github.com/Saurabh-gzp/VidGrab/releases/latest/download/VidGrab-v2.2.3-universal.apk) | 151 MB | `0edbd50d3319bc4fbacb4dd6fef865b9` |
+| **Source ZIP** (`VidGrab-v2.2.3-source.zip`) | [Download](https://github.com/Saurabh-gzp/VidGrab/releases/latest/download/VidGrab-v2.2.3-source.zip) | 3 MB | `d917bf316769e507e3e914b3ea5579fc` |
 
 > **Note:** GitHub's per-file limit is 100 MB, so the 151 MB APK lives on **Releases**
 > (up to 2 GB per file) instead of the git tree. The button above downloads it directly.
 
-### 🆕 What's new in v2.2.2
+### 🆕 What's new in v2.2.3
+
+- **Settings version fixed** — *Settings → About* now shows the **real app version**
+  straight from the build (`v2.2.3`). It was previously hardcoded and kept showing an
+  old number no matter which release you installed.
+- Same signing key as v2.2.2 — install it straight over the previous version,
+  no uninstall needed.
+
+<details>
+<summary>v2.2.2 changes</summary>
 
 - **Notification fixes** — Cancel button on the download notification, and it now
   disappears automatically when a download finishes (plus clean "completed / failed" alerts).
 - **Audio download fix** — on sites without separate audio streams, the M4A/MP3 options
   now extract only the audio track instead of pulling the whole video file.
 - **New launcher icon** — fresh logo across all launchers.
+
+</details>
 
 **Requirements:** Android 10+ · arm64-v8a / armeabi-v7a / x86_64 (universal APK)
 
@@ -65,9 +76,9 @@ Everything is hosted on [GitHub Releases](https://github.com/Saurabh-gzp/VidGrab
 
 ```
 VidGrab/
-├── VidGrab-v2.2.2-universal.apk   ← app (direct download via Releases)
+├── VidGrab-v2.2.3-universal.apk   ← app (direct download via Releases)
 ├── App_source_code/               ← full app source (ZIP)
-│   └── VidGrab-v2.2.2-source.zip
+│   └── VidGrab-v2.2.3-source.zip
 ├── Web/                           ← official website (GitHub Pages)
 │   ├── index.html                 ← complete site — single file, no build step
 │   └── icon.png
