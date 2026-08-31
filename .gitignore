@@ -1,0 +1,8 @@
+# Local download cache (raw files from gofile)
+downloads/
+# Helper scripts used to fetch artifacts
+scripts/
+# Temp / OS noise
+*.part
+.DS_Store
+Thumbs.db
