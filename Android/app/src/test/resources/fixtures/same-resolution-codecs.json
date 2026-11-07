@@ -1,0 +1,71 @@
+{
+  "id": "regression-720-codecs",
+  "title": "Regression media",
+  "duration": 332,
+  "formats": [
+    {
+      "format_id": "251",
+      "ext": "webm",
+      "width": null,
+      "height": null,
+      "vcodec": "none",
+      "acodec": "opus",
+      "filesize": 5503142,
+      "filesize_approx": 5503123,
+      "tbr": 132.805,
+      "fps": null,
+      "protocol": "https",
+      "language_preference": -1,
+      "quality": 3.0,
+      "source_preference": -1
+    },
+    {
+      "format_id": "136",
+      "ext": "mp4",
+      "width": 1280,
+      "height": 720,
+      "vcodec": "avc1.4D401F",
+      "acodec": "none",
+      "filesize": 83479456,
+      "filesize_approx": 83479438,
+      "tbr": 2014.994,
+      "fps": 30,
+      "protocol": "https",
+      "language_preference": -1,
+      "quality": 8.0,
+      "source_preference": -1
+    },
+    {
+      "format_id": "247",
+      "ext": "webm",
+      "width": 1280,
+      "height": 720,
+      "vcodec": "vp9",
+      "acodec": "none",
+      "filesize": 53867522,
+      "filesize_approx": 53867515,
+      "tbr": 1300.233,
+      "fps": 30,
+      "protocol": "https",
+      "language_preference": -1,
+      "quality": 8.0,
+      "source_preference": -1
+    },
+    {
+      "format_id": "398",
+      "ext": "mp4",
+      "width": 1280,
+      "height": 720,
+      "vcodec": "av01.0.05M.08",
+      "acodec": "none",
+      "filesize": 43457809,
+      "filesize_approx": 43457784,
+      "tbr": 1048.967,
+      "fps": 30,
+      "protocol": "https",
+      "language_preference": -1,
+      "quality": 8.0,
+      "source_preference": -1
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "engine": "bundled official yt-dlp 2026.10.26",
+  "environment": "Linux CLI with Node JS runtime; Android UI/runtime separately tested by root",
+  "authentication": "No login, cookies or credentials supplied",
+  "scope": "One public extractor test example per platform; a passing fragment smoke test does not prove all media/accounts/features work",
+  "youtube": "Tested separately by root; do not duplicate",
+  "results": [
+    {
+      "platform": "Vimeo",
+      "publicPageUrl": "https://vimeo.com/56015672",
+      "source": "yt_dlp/extractor/vimeo.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 2.665,
+      "exitCode": 1,
+      "extraction": "not_confirmed",
+      "downloadSmoke": "blocked_or_failed",
+      "files": [],
+      "failureCategory": "authentication_or_bot_restriction",
+      "error": "ERROR: [vimeo] 56015672: The web client only works when logged-in. Use --cookies, --cookies-from-browser, --username and --password, --netrc-cmd, or --netrc (vimeo) to provide account credentials. See  <url>  for how to manually pass cookies"
+    },
+    {
+      "platform": "Dailymotion",
+      "publicPageUrl": "https://www.dailymotion.com/video/x5kesuj",
+      "source": "yt_dlp/extractor/dailymotion.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 2.954,
+      "exitCode": 1,
+      "extraction": "not_confirmed",
+      "downloadSmoke": "blocked_or_failed",
+      "files": [],
+      "failureCategory": "required_tls_impersonation_runtime_unavailable",
+      "error": "ERROR: [dailymotion] x5kesuj: The extractor is attempting impersonation, but none of these impersonate targets are available: firefox. See  <url>  for information on installing the required dependencies"
+    },
+    {
+      "platform": "Reddit",
+      "publicPageUrl": "https://www.reddit.com/r/videos/comments/6rrwyj/that_small_heart_attack/",
+      "source": "yt_dlp/extractor/reddit.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 1.99,
+      "exitCode": 1,
+      "extraction": "not_confirmed",
+      "downloadSmoke": "blocked_or_failed",
+      "files": [],
+      "failureCategory": "authentication_or_bot_restriction",
+      "error": "ERROR: [Reddit] 6rrwyj: Account authentication is required. Use --cookies-from-browser or --cookies for the authentication. See  <url>  for how to manually pass cookies"
+    },
+    {
+      "platform": "Instagram",
+      "publicPageUrl": "https://www.instagram.com/reel/Chunk8-jurw/",
+      "source": "yt_dlp/extractor/instagram.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 3.057,
+      "exitCode": 0,
+      "extraction": "passed",
+      "downloadSmoke": "passed",
+      "files": [
+        {
+          "name": "sample.mp4",
+          "bytes": 10241
+        }
+      ],
+      "failureCategory": null,
+      "error": null,
+      "metadata": {
+        "extractor": "Instagram",
+        "hasFormats": true,
+        "videoCodec": null,
+        "audioCodec": "none",
+        "width": null,
+        "height": null
+      }
+    },
+    {
+      "platform": "TikTok",
+      "publicPageUrl": "https://www.tiktok.com/@hankgreen1/video/7047596209028074758",
+      "source": "yt_dlp/extractor/tiktok.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 3.627,
+      "exitCode": 1,
+      "extraction": "not_confirmed",
+      "downloadSmoke": "blocked_or_failed",
+      "files": [],
+      "failureCategory": "unexpected_platform_response",
+      "error": "ERROR: [TikTok] 7047596209028074758: Unexpected response from webpage request; please report this issue on  <url> , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U"
+    },
+    {
+      "platform": "Facebook",
+      "publicPageUrl": "https://www.facebook.com/cnn/videos/10155529876156509/",
+      "source": "yt_dlp/extractor/facebook.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 5.389,
+      "exitCode": 0,
+      "extraction": "passed",
+      "downloadSmoke": "passed",
+      "files": [
+        {
+          "name": "sample.mp4",
+          "bytes": 10241
+        }
+      ],
+      "failureCategory": null,
+      "error": null,
+      "metadata": {
+        "extractor": "Facebook",
+        "hasFormats": true,
+        "videoCodec": null,
+        "audioCodec": null,
+        "width": null,
+        "height": null
+      }
+    },
+    {
+      "platform": "X",
+      "publicPageUrl": "https://twitter.com/starwars/status/665052190608723968",
+      "source": "yt_dlp/extractor/twitter.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 3.98,
+      "exitCode": 1,
+      "extraction": "not_confirmed",
+      "downloadSmoke": "blocked_or_failed",
+      "files": [],
+      "failureCategory": "old_media_domain_unavailable",
+      "error": "ERROR: [twitter:amplify] 93ad3568-03d2-47b9-a57b-624b88693acd: Unable to download webpage: HTTP Error 500: Domain Not Found (caused by <HTTPError 500: Domain Not Found>)"
+    },
+    {
+      "platform": "Direct audio",
+      "publicPageUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "source": "SoundHelix official public audio example",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 5.312,
+      "exitCode": 0,
+      "extraction": "passed",
+      "downloadSmoke": "passed",
+      "files": [
+        {
+          "name": "sample.mp3",
+          "bytes": 10241
+        }
+      ],
+      "failureCategory": null,
+      "error": null,
+      "metadata": {
+        "extractor": "Generic",
+        "hasFormats": true,
+        "videoCodec": "none",
+        "audioCodec": "mp3",
+        "width": null,
+        "height": null
+      }
+    },
+    {
+      "platform": "Vimeo embed",
+      "publicPageUrl": "https://player.vimeo.com/video/54469442",
+      "source": "yt_dlp/extractor/vimeo.py:_TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 1.691,
+      "exitCode": 1,
+      "extraction": "not_confirmed",
+      "downloadSmoke": "blocked_or_failed",
+      "files": [],
+      "failureCategory": "required_tls_impersonation_runtime_unavailable",
+      "error": "ERROR: [vimeo] 54469442: This request has been blocked due to its TLS fingerprint. Install a required impersonation dependency if possible, or else if you are okay with compromising your security/cookies, try replacing \"https:\" with \"http:\" in the input URL. If you are using a data center IP or VPN/proxy, your IP may be blocked."
+    },
+    {
+      "platform": "X newer public example",
+      "publicPageUrl": "https://x.com/historyinmemes/status/1790637656616943991",
+      "source": "yt_dlp/extractor/twitter.py:TwitterIE._TESTS",
+      "mode": "yt-dlp --test (first bytes/fragments only), no cookies or login",
+      "elapsedSeconds": 1.585,
+      "exitCode": 0,
+      "extraction": "passed",
+      "downloadSmoke": "passed",
+      "files": [
+        {
+          "name": "sample.mp4",
+          "bytes": 10241
+        }
+      ],
+      "failureCategory": null,
+      "error": null,
+      "metadata": {
+        "extractor": "Twitter",
+        "hasFormats": true,
+        "videoCodec": null,
+        "audioCodec": null,
+        "width": 272,
+        "height": 270
+      }
+    }
+  ]
+}

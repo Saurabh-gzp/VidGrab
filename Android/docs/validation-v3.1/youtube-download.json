@@ -1,0 +1,15 @@
+{
+  "platform": "YouTube",
+  "url": "https://youtu.be/NKp_uP5wAig",
+  "selected": "398+251",
+  "transfer_expected_bytes": 48960951,
+  "first_byte_seconds": 1.3063854460001494,
+  "total_seconds": 3.695,
+  "exit_code": 0,
+  "measured_stream_bytes": {
+    "398": 43457809,
+    "251": 5503142
+  },
+  "output_bytes": 49003825,
+  "loaded_snapshot": true
+}

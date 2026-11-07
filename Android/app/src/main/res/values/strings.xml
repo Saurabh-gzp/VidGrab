@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VidGrab</string>
+    <string name="notif_channel_downloads">Downloads</string>
+    <string name="notif_channel_downloads_desc">Active download progress</string>
+    <string name="notif_channel_results">Results</string>
+    <string name="notif_channel_results_desc">Completed and failed downloads</string>
+    <string name="notif_action_cancel">Cancel</string>
+    <string name="notif_channel_updates">Download engine updates</string>
+    <string name="notif_channel_updates_desc">Progress while the download engine is updated</string>
+    <string name="notif_downloading">Downloading…</string>
+    <string name="notif_preparing">Processing…</string>
+    <string name="notif_download_done">Download complete</string>
+    <string name="notif_download_failed">Download failed</string>
+    <string name="notif_updating">Updating download engine</string>
+</resources>

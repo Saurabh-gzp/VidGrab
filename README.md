@@ -1,112 +1,54 @@
 <div align="center">
+<img src="Web/icon.png" width="100" alt="VidGrab logo" />
 
-<img src="Web/icon.png" width="110" alt="VidGrab logo" />
+# VidGrab 3.1.0
 
-# VidGrab
+Android video and audio downloader · Kotlin · Jetpack Compose
 
-**Download any video. Any audio. Anywhere.**
-
-VidGrab is a free, fast, ad-free Android app that turns any link into a download —
-videos or audio, at the best available quality (up to 8K) from 10+ platforms.
-
-![Platform](https://img.shields.io/badge/Platform-Android-3ddc84?logo=android&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.2.3-a855f7)
-![Min SDK](https://img.shields.io/badge/Min%20SDK-29%20(Android%2010)-6d5efc)
-![Build](https://img.shields.io/badge/Stack-Kotlin%20%2B%20Compose-ec4899)
-![License](https://img.shields.io/badge/License-MIT-34d399)
-
-[⬇️ Download APK](#-download) · [🌐 Visit Website](https://saurabh-gzp.github.io/VidGrab/) · [📖 View Source](#-source-code)
-
+[Download APK](https://github.com/Saurabh-gzp/VidGrab/releases/download/v3.1.0/VidGrab-v3.1.0-arm64.apk) · [Source ZIP](https://github.com/Saurabh-gzp/VidGrab/releases/download/v3.1.0/VidGrab-v3.1.0-source.zip) · [Website](https://saurabh-gzp.github.io/VidGrab/)
 </div>
 
----
+## Download
 
-## ✨ Features
+The main APK supports **ARM64 phones running Android 10 or newer**. It is about **62.1 MB**, compared with 158.8 MB for the previous APK containing three CPU runtimes. ARM64 is a CPU architecture; Android 10 remains the minimum OS version.
 
-| Feature | Detail |
-| --- | --- |
-| 🎯 **10+ platforms** | YouTube, Instagram, Facebook, X, TikTok, Pinterest, Reddit, Dailymotion, Vimeo, Twitch |
-| 📺 **Up to 8K** | Full quality ladder with honest size estimates (video + audio sum) |
-| 🎵 **Video & Audio** | Sorted automatically into `VidGrab/Video` and `VidGrab/Audio` |
-| ⏬ **Background downloads** | Foreground service + live progress notifications |
-| 📤 **Share-to-app** | Share any link straight into VidGrab, download starts instantly |
-| 🔄 **Smart self-updates** | Keeps the download engine fresh for the best quality |
-| 🚫 **No ads, no signup** | 100% free, no trackers, no nonsense |
+- [VidGrab-v3.1.0-arm64.apk](https://github.com/Saurabh-gzp/VidGrab/releases/download/v3.1.0/VidGrab-v3.1.0-arm64.apk)
+- [Complete source ZIP](https://github.com/Saurabh-gzp/VidGrab/releases/download/v3.1.0/VidGrab-v3.1.0-source.zip)
+- [SHA-256 checksums](https://github.com/Saurabh-gzp/VidGrab/releases/download/v3.1.0/SHA256SUMS-v3.1.0.txt)
 
-## ⬇️ Download
+The APK retains the existing signing identity and uses versionCode 31. Install it over the previous official app. For a different CPU, build the source with the appropriate targetAbis property.
 
-Everything is hosted on [GitHub Releases](https://github.com/Saurabh-gzp/VidGrab/releases).
+## What's changed
 
-| File | Link | Size | MD5 |
-| --- | --- | --- | --- |
-| **VidGrab APK** (`VidGrab-v2.2.3-universal.apk`) | [Download](https://github.com/Saurabh-gzp/VidGrab/releases/latest/download/VidGrab-v2.2.3-universal.apk) | 151 MB | `0edbd50d3319bc4fbacb4dd6fef865b9` |
-| **Source ZIP** (`VidGrab-v2.2.3-source.zip`) | [Download](https://github.com/Saurabh-gzp/VidGrab/releases/latest/download/VidGrab-v2.2.3-source.zip) | 3 MB | `d917bf316769e507e3e914b3ea5579fc` |
+- New violet UI, artwork-led results, quality tiles and custom navigation.
+- Quality choices and size estimates now use the same concrete stream IDs.
+- Reuse recently fetched metadata to avoid extracting the video again when Download is tapped.
+- Enable the private engine cache and parse measured video/audio bytes for progress.
+- Show connection progress before bytes arrive; mark estimates and unknown sizes honestly.
+- Correct portrait quality labels using the shorter dimension and inspect saved media for history.
+- Preserve durable local thumbnails and the queue/storage fixes from version 3.0.
 
-> **Note:** GitHub's per-file limit is 100 MB, so the 151 MB APK lives on **Releases**
-> (up to 2 GB per file) instead of the git tree. The button above downloads it directly.
+## Source and build
 
-### 🆕 What's new in v2.2.3
+The full Android project is directly browsable in [Android/](Android/). A ready-to-open ZIP is also in [App_source_code/](App_source_code/).
 
-- **Settings version fixed** — *Settings → About* now shows the **real app version**
-  straight from the build (`v2.2.3`). It was previously hardcoded and kept showing an
-  old number no matter which release you installed.
-- Same signing key as v2.2.2 — install it straight over the previous version,
-  no uninstall needed.
+Install JDK 17, Android SDK platform 36 and Build Tools 36.0.0. Open Android/ in Android Studio or run:
 
-<details>
-<summary>v2.2.2 changes</summary>
-
-- **Notification fixes** — Cancel button on the download notification, and it now
-  disappears automatically when a download finishes (plus clean "completed / failed" alerts).
-- **Audio download fix** — on sites without separate audio streams, the M4A/MP3 options
-  now extract only the audio track instead of pulling the whole video file.
-- **New launcher icon** — fresh logo across all launchers.
-
-</details>
-
-**Requirements:** Android 10+ · arm64-v8a / armeabi-v7a / x86_64 (universal APK)
-
-### 🛠️ Install
-
-1. Tap **Download APK** above.
-2. Open the file and allow *"Install unknown apps"* for your browser / file manager.
-3. Install, open, and paste any link — or share a link into VidGrab.
-
-## 📂 Repository layout
-
-```
-VidGrab/
-├── VidGrab-v2.2.3-universal.apk   ← app (direct download via Releases)
-├── App_source_code/               ← full app source (ZIP)
-│   └── VidGrab-v2.2.3-source.zip
-├── Web/                           ← official website (GitHub Pages)
-│   ├── index.html                 ← complete site — single file, no build step
-│   └── icon.png
-└── .github/workflows/pages.yml    ← deploys Web/ to GitHub Pages
+```sh
+cd Android
+./gradlew testDebugUnitTest assembleRelease
 ```
 
-## 📖 Source code
+The default APK includes ARM64 only. Build another CPU with `-PtargetAbis=armeabi-v7a` or `-PtargetAbis=x86_64`. Signing keys/passwords and local SDK paths are excluded. Configure your own local keystore.properties to reproduce your signing identity; see [build/signing instructions](Android/README.md).
 
-Open the ZIP in **Android Studio** (Ladybug or newer) and hit Run — no extra setup.
+## Verification
 
-- **Language / UI:** Kotlin · Jetpack Compose · Material 3
-- **Download engine:** bundled yt-dlp (`app/src/main/assets/ytdlp_bundle`)
-- **Key modules:**
-  - `util/Fetcher.kt` — extraction wrapper with client fallback chain
-  - `util/UrlUtils.kt` — URL detection & platform mapping
-  - `util/MediaSaver.kt` — saves into `VidGrab/{Video,Audio}`
-  - `core/DownloadRepository.kt` + `service/DownloadService.kt` — background downloads
-  - `core/UpdateManager.kt` + `service/UpdateService.kt` — engine self-updates
-  - `ui/` — Compose screens (Home, Downloads, Settings)
+**73 JVM regression tests passed**, and the release APK built successfully with signature verification. Actual bundled-engine sample downloads passed for YouTube, Instagram, Facebook, X and direct MP3 audio. Some other public samples encountered login or platform restrictions.
 
-## 🌐 Website
+For the reported YouTube video, the selected streams totalled 48,960,951 bytes and the real merged file was 49,003,825 bytes. First bytes arrived in 1.306 seconds on the server test; this is not a phone performance guarantee.
 
-The official site lives in [`Web/`](Web/index.html) — a single, dependency-free HTML file
-(no build step) deployed automatically to
-**[saurabh-gzp.github.io/VidGrab](https://saurabh-gzp.github.io/VidGrab/)** via GitHub Actions.
+Android runtime tests compile, but their execution could not finish because the software emulator boot-looped. Further testing was stopped at the owner's request. Phone UI, storage and lifecycle testing remain pending. See [3.1 changes](Android/docs/CHANGES-3.1.md), [design references](Android/docs/DESIGN.md) and [validation](Android/docs/VALIDATION.md).
 
-## ⚖️ License & disclaimer
+## Notes
 
-MIT © Saurabh. VidGrab is an independent project, not affiliated with YouTube, Instagram,
-TikTok, or any other platform. Please respect platform terms of service and copyright —
-download only content you have the right to keep.
+Availability depends on the source platform. Download only media you have permission to save. VidGrab is independent of the supported platforms. The original repository describes the project as MIT; dependency licenses remain applicable.

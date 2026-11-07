@@ -1,0 +1,3 @@
+# Version3.1 verification
+
+73 JVM regression tests passed; debug compilation passed. Actual bundled-engine downloads passed for the reported YouTube video, public Instagram/Facebook/X samples and direct MP3 audio. The reported video used398+251,48,960,951 input bytes and49,003,825 saved bytes; firstbytes1.306s on the test server, not a phone guarantee. Android runtime test package compiles, but execution was not completed because the software emulator boot-looped. Further testing was stopped at the user request. Phone UI/storage/lifecycle testing remains pending. Release APK build is supplied separately.

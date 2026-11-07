@@ -6,3 +6,11 @@ scripts/
 *.part
 .DS_Store
 Thumbs.db
+
+**/local.properties
+**/keystore.properties
+*.keystore
+*.jks
+**/.gradle/
+**/.kotlin/
+**/build/
